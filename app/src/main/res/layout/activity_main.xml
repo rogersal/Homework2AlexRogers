@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/titletext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Face App"
+                android:textAlignment="center"
+                android:textSize="36sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:orientation="horizontal">
+
+            <com.example.homework2.Face
+                android:id="@+id/faceview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginRight="5dp"
+            android:orientation="horizontal"
+            tools:layout_marginLeft="5dp">
+
+            <LinearLayout
+                android:layout_width="700dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="25dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Red"
+                    android:textSize="18sp" />
+
+                <SeekBar
+                    android:id="@+id/redseek"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:max="255" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Green"
+                    android:textSize="18sp" />
+
+                <SeekBar
+                    android:id="@+id/greenseek"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:max="255" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Blue"
+                    android:textSize="18sp" />
+
+                <SeekBar
+                    android:id="@+id/blueseek"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:max="255" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical">
+
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:spinnerMode="dropdown">
+
+                </Spinner>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RadioGroup
+                    android:id="@+id/radioGroup"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RadioButton
+                        android:id="@+id/skin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Skin"
+                        android:textSize="24sp" />
+
+                    <RadioButton
+                        android:id="@+id/eyes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Eyes"
+                        android:textSize="24sp" />
+
+                    <RadioButton
+                        android:id="@+id/hair"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Hair"
+                        android:textSize="24sp" />
+                    <RadioButton
+                        android:id="@+id/randomize"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Randomize"
+                        android:textSize="24sp" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"></LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
